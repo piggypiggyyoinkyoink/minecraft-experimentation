@@ -3,5 +3,9 @@
   "item.piggypiggyyoinkyoink.raw_dingus": "Raw Dingus",
 
   "block.piggypiggyyoinkyoink.dingus_block": "Block of Dingus",
-  "block.piggypiggyyoinkyoink.dingus_ore" : "Dingus Ore"
+  "block.piggypiggyyoinkyoink.dingus_ore" : "Dingus Ore",
+
+  "creativetab.piggypiggyyoinkyoink.dingus_items": "Dingus Items",
+  "creativetab.piggypiggyyoinkyoink.dingus_blocks": "Dingus Blocks"
+
 }
