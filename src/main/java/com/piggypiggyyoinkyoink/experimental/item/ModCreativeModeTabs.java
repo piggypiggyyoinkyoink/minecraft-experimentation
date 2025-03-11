@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModBlocks.DINGUS_BLOCK);
                         output.accept(ModBlocks.DINGUS_ORE);
+                        output.accept(ModBlocks.DINGUS_DEEPSLATE_ORE);
+
                     })
                     .build());
     public static void register(IEventBus eventBus){
