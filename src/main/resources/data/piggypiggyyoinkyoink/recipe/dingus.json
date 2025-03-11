@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "piggypiggyyoinkyoink:dingus_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "piggypiggyyoinkyoink:dingus"
+  }
+}
