@@ -2,6 +2,7 @@ package com.piggypiggyyoinkyoink.experimental.item;
 
 import com.piggypiggyyoinkyoink.experimental.Experimental;
 import com.piggypiggyyoinkyoink.experimental.item.custom.ChiselItem;
+import com.piggypiggyyoinkyoink.experimental.item.custom.FuelItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -20,7 +21,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.RADISH)));
     public static final DeferredItem<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DIAMOND_APPLE)));
-
+    public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register("frostfire_ice",
+            () -> new FuelItem(new Item.Properties(), 800));
+    public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",
+            () -> new Item(new Item.Properties())); //uses /data/neoforge/data_maps/itemfurnace_fuels.json
+    //^ 2 different ways of adding fuels. To get vanilla burntimes, shift twice and go to AbstractFurnaceBlockEntity class buildFuels method
 
 
     public static void register(IEventBus eventBus){
