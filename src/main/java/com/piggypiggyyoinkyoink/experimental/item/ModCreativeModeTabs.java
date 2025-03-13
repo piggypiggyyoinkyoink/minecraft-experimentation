@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.DINGUS);
                         output.accept(ModItems.RAW_DINGUS);
+                        output.accept(ModItems.CHISEL);
                     })
                     .build());
     public static final Supplier<CreativeModeTab> DINGUS_BLOCK_TAB = CREATIVE_MODE_TAB.register("dingus_blocks_tab",
