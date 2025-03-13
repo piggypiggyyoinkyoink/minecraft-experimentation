@@ -18,6 +18,11 @@ public class ModItems {
             () -> new ChiselItem(new Item.Properties().durability(32)));
     public static final DeferredItem<Item> RADISH = ITEMS.register("radish",
             () -> new Item(new Item.Properties().food(ModFoodProperties.RADISH)));
+    public static final DeferredItem<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.DIAMOND_APPLE)));
+
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
 
