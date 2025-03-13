@@ -35,6 +35,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DINGUS_BLOCK);
                         output.accept(ModBlocks.DINGUS_ORE);
                         output.accept(ModBlocks.DINGUS_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
 
                     })
                     .build());
