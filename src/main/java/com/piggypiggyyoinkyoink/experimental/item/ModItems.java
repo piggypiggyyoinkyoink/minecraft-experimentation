@@ -2,6 +2,7 @@ package com.piggypiggyyoinkyoink.experimental.item;
 
 import com.piggypiggyyoinkyoink.experimental.Experimental;
 import com.piggypiggyyoinkyoink.experimental.item.custom.ChiselItem;
+import com.piggypiggyyoinkyoink.experimental.item.custom.EnchantedAppleItem;
 import com.piggypiggyyoinkyoink.experimental.item.custom.FuelItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -21,6 +22,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.RADISH)));
     public static final DeferredItem<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
             () -> new Item(new Item.Properties().food(ModFoodProperties.DIAMOND_APPLE)));
+    public static final DeferredItem<Item> ENCHANTED_DIAMOND_APPLE = ITEMS.register("enchanted_diamond_apple",
+            () -> new EnchantedAppleItem(new Item.Properties().food(ModFoodProperties.ENCHANTED_DIAMOND_APPLE)));
+
     public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register("frostfire_ice",
             () -> new FuelItem(new Item.Properties(), 800));
     public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",

@@ -18,8 +18,17 @@ public class ModFoodProperties {
             .nutrition(3)
             .saturationModifier(0.25f)
             .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 400, 3), 1.0f)
-            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 4), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 2), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 250, 2), 1.0f)
+            .alwaysEdible()
+            .build();
+
+    public static final FoodProperties ENCHANTED_DIAMOND_APPLE = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationModifier(0.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000, 5), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 700, 4), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 500, 3), 1.0f)
             .alwaysEdible()
             .build();
 
