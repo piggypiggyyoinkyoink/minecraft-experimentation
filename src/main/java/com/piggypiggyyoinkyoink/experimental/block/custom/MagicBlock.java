@@ -1,6 +1,7 @@
 package com.piggypiggyyoinkyoink.experimental.block.custom;
 
 import com.piggypiggyyoinkyoink.experimental.item.ModItems;
+import com.piggypiggyyoinkyoink.experimental.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -35,7 +36,7 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if (entity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == ModItems.RAW_DINGUS.get()){ //for vanilla items do not need the .get() here; this is for items added by this mod - only DeferredItems need the .get(), not regular ones.
+            if(isValidItem(itemEntity.getItem())){ //for vanilla items do not need the .get() here; this is for items added by this mod - only DeferredItems need the .get(), not regular ones.
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
             if(itemEntity.getItem().getItem() == Items.POPPY){
@@ -44,6 +45,10 @@ public class MagicBlock extends Block {
 
         }
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     @Override
