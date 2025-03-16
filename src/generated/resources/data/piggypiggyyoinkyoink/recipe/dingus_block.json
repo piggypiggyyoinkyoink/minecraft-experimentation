@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "D": {
+    "B": {
       "item": "piggypiggyyoinkyoink:dingus"
     }
   },
   "pattern": [
-    "DDD",
-    "DDD",
-    "DDD"
+    "BBB",
+    "BBB",
+    "BBB"
   ],
   "result": {
     "count": 1,

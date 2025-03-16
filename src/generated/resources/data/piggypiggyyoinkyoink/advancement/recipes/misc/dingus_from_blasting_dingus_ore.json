@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dingus_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "piggypiggyyoinkyoink:dingus_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "piggypiggyyoinkyoink:dingus_from_blasting_dingus_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dingus_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "piggypiggyyoinkyoink:dingus_from_blasting_dingus_ore"
+    ]
+  }
+}

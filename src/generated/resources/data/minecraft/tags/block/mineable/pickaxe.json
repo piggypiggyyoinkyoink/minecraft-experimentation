@@ -1,8 +1,8 @@
 {
-  "replace": false,
   "values": [
     "piggypiggyyoinkyoink:dingus_block",
     "piggypiggyyoinkyoink:dingus_ore",
-    "piggypiggyyoinkyoink:dingus_deepslate_ore"
+    "piggypiggyyoinkyoink:dingus_deepslate_ore",
+    "piggypiggyyoinkyoink:magic_block"
   ]
 }

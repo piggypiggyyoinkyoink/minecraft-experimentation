@@ -1,5 +1,8 @@
 {
   "values": {
+    "piggypiggyyoinkyoink:frostfire_ice": {
+      "burn_time": 2400
+    },
     "piggypiggyyoinkyoink:starlight_ashes": {
       "burn_time": 1200
     }
