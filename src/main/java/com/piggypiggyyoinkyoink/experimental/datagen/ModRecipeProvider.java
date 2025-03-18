@@ -6,6 +6,8 @@ import com.piggypiggyyoinkyoink.experimental.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -33,6 +35,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.DINGUS.get(), 18)
                 .requires(ModBlocks.DINGUS_BLOCK)
                 .unlockedBy("has_magic_block", has(ModBlocks.MAGIC_BLOCK)).save(recipeOutput, "piggypiggyyoinkyoink:bismuth_from_magic_block");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK.get(), 1)
+                .requires(ItemTags.PLANKS)
+                .unlockedBy("has_planks", has(ItemTags.PLANKS)).save(recipeOutput, "piggypiggyyoinkyoink:magic_block_from_planks");
 
         List<ItemLike> DINGUS_SMELTABLES = List.of(ModItems.RAW_DINGUS, ModBlocks.DINGUS_ORE, ModBlocks.DINGUS_DEEPSLATE_ORE);
         oreSmelting(recipeOutput, DINGUS_SMELTABLES, RecipeCategory.MISC, ModItems.DINGUS.get(), 0.25f, 200, "dingus");
