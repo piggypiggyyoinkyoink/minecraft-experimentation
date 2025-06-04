@@ -25,6 +25,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.DINGUS_BLOCK.get())
                 .add(ModBlocks.DINGUS_ORE.get())
                 .add(ModBlocks.DINGUS_DEEPSLATE_ORE.get())
+                .add(ModBlocks.DINGUS_LAMP.get())
                 .add(ModBlocks.MAGIC_BLOCK.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DINGUS_ORE.get())
@@ -40,6 +41,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.NEEDS_DINGUS_TOOL)
                 .add(ModBlocks.DINGUS_LAMP.get())
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
         tag(ModTags.Blocks.INCORRECT_FOR_DINGUS_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_DINGUS_TOOL);
