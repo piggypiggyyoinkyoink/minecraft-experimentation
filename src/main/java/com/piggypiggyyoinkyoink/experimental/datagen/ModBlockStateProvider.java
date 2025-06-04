@@ -2,9 +2,12 @@ package com.piggypiggyyoinkyoink.experimental.datagen;
 
 import com.piggypiggyyoinkyoink.experimental.Experimental;
 import com.piggypiggyyoinkyoink.experimental.block.ModBlocks;
+import com.piggypiggyyoinkyoink.experimental.block.custom.DingusLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -45,7 +48,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(ModBlocks.DINGUS_TRAPDOOR.get(), modLoc("block/dingus_trapdoor"), true, "cutout");
         blockItem(ModBlocks.DINGUS_TRAPDOOR, "_bottom");
 
+        customLamp();
     }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.DINGUS_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(DingusLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("dingus_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(Experimental.MODID, "block/" + "dingus_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("dingus_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(Experimental.MODID, "block/" + "dingus_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.DINGUS_LAMP.get(), models().cubeAll("dingus_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(Experimental.MODID, "block/" + "dingus_lamp_on")));
+    }
+
 
     private void blockWithItem(DeferredBlock<?> deferredBlock){
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));

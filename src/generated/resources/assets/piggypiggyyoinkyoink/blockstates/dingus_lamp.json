@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "piggypiggyyoinkyoink:block/dingus_lamp_off"
+    },
+    "clicked=true": {
+      "model": "piggypiggyyoinkyoink:block/dingus_lamp_on"
+    }
+  }
+}

@@ -46,6 +46,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.DINGUS_TRAPDOOR.get());
         add(ModBlocks.DINGUS_DOOR.get(),
                 block -> createDoorTable(ModBlocks.DINGUS_DOOR.get()));
+        dropSelf(ModBlocks.DINGUS_LAMP.get());
     }
 
     //this is literally copy pasted and modified from BlockLootSubProvider.java createCopperOreDrop() method from vanilla code.

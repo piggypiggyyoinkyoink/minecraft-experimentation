@@ -51,6 +51,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DINGUS_FENCE);
                         output.accept(ModBlocks.DINGUS_FENCE_GATE);
                         output.accept(ModBlocks.DINGUS_WALL);
+                        output.accept(ModBlocks.DINGUS_LAMP);
 
                     })
                     .build());

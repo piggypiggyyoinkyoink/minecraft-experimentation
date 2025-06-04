@@ -1,6 +1,7 @@
 package com.piggypiggyyoinkyoink.experimental.block;
 
 import com.piggypiggyyoinkyoink.experimental.Experimental;
+import com.piggypiggyyoinkyoink.experimental.block.custom.DingusLampBlock;
 import com.piggypiggyyoinkyoink.experimental.block.custom.MagicBlock;
 import com.piggypiggyyoinkyoink.experimental.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -63,7 +64,8 @@ public class ModBlocks {
             ()-> new TrapDoorBlock(BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion())); //need noOcclusion for trapdoors
 
-
+    public static final DeferredBlock<Block> DINGUS_LAMP = registerBlock("dingus_lamp",
+            ()-> new DingusLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(DingusLampBlock.CLICKED) ? 15:0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name,block);
