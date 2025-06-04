@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "piggypiggyyoinkyoink:block/dingus_pressure_plate"
+    },
+    "powered=true": {
+      "model": "piggypiggyyoinkyoink:block/dingus_pressure_plate_down"
+    }
+  }
+}

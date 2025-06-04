@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "piggypiggyyoinkyoink:block/dingus_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "piggypiggyyoinkyoink:block/dingus_block"
+  }
+}

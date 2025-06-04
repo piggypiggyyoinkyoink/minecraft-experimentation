@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "piggypiggyyoinkyoink:block/dingus_slab"
+    },
+    "type=double": {
+      "model": "piggypiggyyoinkyoink:block/dingus_block"
+    },
+    "type=top": {
+      "model": "piggypiggyyoinkyoink:block/dingus_slab_top"
+    }
+  }
+}

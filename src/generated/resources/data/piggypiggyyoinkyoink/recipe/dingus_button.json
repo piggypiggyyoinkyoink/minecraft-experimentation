@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "dingus",
+  "ingredients": [
+    {
+      "item": "piggypiggyyoinkyoink:dingus"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "piggypiggyyoinkyoink:dingus_button"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "dingus",
+  "key": {
+    "#": {
+      "item": "piggypiggyyoinkyoink:dingus"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "piggypiggyyoinkyoink:dingus_stairs"
+  }
+}
