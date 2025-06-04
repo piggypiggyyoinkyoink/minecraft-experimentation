@@ -27,5 +27,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DINGUS_ORE.get())
                 .add(ModBlocks.DINGUS_DEEPSLATE_ORE.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.DINGUS_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.DINGUS_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.DINGUS_WALL.get());
     }
 }

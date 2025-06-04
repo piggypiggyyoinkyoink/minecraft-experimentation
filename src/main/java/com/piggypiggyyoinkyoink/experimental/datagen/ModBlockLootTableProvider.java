@@ -34,6 +34,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DINGUS_ORE.get(), ModItems.RAW_DINGUS.get())); //first is for silk touch, second is normal.
         add(ModBlocks.DINGUS_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DINGUS_DEEPSLATE_ORE.get(), ModItems.RAW_DINGUS.get(), 2, 5));
+
+        dropSelf(ModBlocks.DINGUS_STAIRS.get());
+        add(ModBlocks.DINGUS_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.DINGUS_SLAB.get()));
+        dropSelf(ModBlocks.DINGUS_FENCE.get());
+        dropSelf(ModBlocks.DINGUS_FENCE_GATE.get());
+        dropSelf(ModBlocks.DINGUS_BUTTON.get());
+        dropSelf(ModBlocks.DINGUS_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.DINGUS_WALL.get());
+        dropSelf(ModBlocks.DINGUS_TRAPDOOR.get());
+        add(ModBlocks.DINGUS_DOOR.get(),
+                block -> createDoorTable(ModBlocks.DINGUS_DOOR.get()));
     }
 
     //this is literally copy pasted and modified from BlockLootSubProvider.java createCopperOreDrop() method from vanilla code.

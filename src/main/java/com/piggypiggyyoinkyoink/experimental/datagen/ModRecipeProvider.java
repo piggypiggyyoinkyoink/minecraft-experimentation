@@ -43,7 +43,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(recipeOutput, DINGUS_SMELTABLES, RecipeCategory.MISC, ModItems.DINGUS.get(), 0.25f, 200, "dingus");
         oreBlasting(recipeOutput, DINGUS_SMELTABLES, RecipeCategory.MISC, ModItems.DINGUS.get(), 0.25f, 100, "dingus");
 
+        stairBuilder(ModBlocks.DINGUS_STAIRS.get(), Ingredient.of(ModItems.DINGUS.get())).group("dingus").unlockedBy("has_dingus", has(ModItems.DINGUS)).save(recipeOutput);
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DINGUS_SLAB.get(), ModItems.DINGUS.get());
 
+        buttonBuilder(ModBlocks.DINGUS_BUTTON.get(), Ingredient.of(ModItems.DINGUS.get())).group("dingus").unlockedBy("has_dingus", has(ModItems.DINGUS)).save(recipeOutput);
+        pressurePlate(recipeOutput, ModBlocks.DINGUS_PRESSURE_PLATE.get(), ModItems.DINGUS.get());
+
+        fenceBuilder(ModBlocks.DINGUS_FENCE.get(), Ingredient.of(ModItems.DINGUS.get())).group("dingus").unlockedBy("has_dingus", has(ModItems.DINGUS)).save(recipeOutput);
+        fenceGateBuilder(ModBlocks.DINGUS_FENCE_GATE.get(), Ingredient.of(ModItems.DINGUS.get())).group("dingus").unlockedBy("has_dingus", has(ModItems.DINGUS)).save(recipeOutput);
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DINGUS_WALL.get(), ModItems.DINGUS.get());
+
+        doorBuilder(ModBlocks.DINGUS_DOOR.get(), Ingredient.of(ModItems.DINGUS.get())).group("dingus").unlockedBy("has_dingus", has(ModItems.DINGUS)).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.DINGUS_TRAPDOOR.get(), Ingredient.of(ModItems.DINGUS.get())).group("dingus").unlockedBy("has_dingus", has(ModItems.DINGUS)).save(recipeOutput);
 
     }
 

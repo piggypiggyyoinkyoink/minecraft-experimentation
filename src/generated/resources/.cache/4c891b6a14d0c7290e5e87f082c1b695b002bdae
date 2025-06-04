@@ -1,3 +1,6 @@
-// 1.21.1	2025-03-16T20:23:39.3674691	Tags for minecraft:block mod id piggypiggyyoinkyoink
+// 1.21.1	2025-06-04T14:18:53.5020878	Tags for minecraft:block mod id piggypiggyyoinkyoink
+d10fccf5e8c7bb79bd0757623e547cf5b3ea8c72 data/minecraft/tags/block/fences.json
+b2aa14962b5f27e19b3d02e294394272888b411a data/minecraft/tags/block/fence_gates.json
 7947fa40e2471e0d4da7725cf743e9fdb250bbb1 data/minecraft/tags/block/mineable/pickaxe.json
 c5e9b19e7cffce9d7e1dddc132e6ada28df2b377 data/minecraft/tags/block/needs_iron_tool.json
+89d2b05777916262074132189ce314ed321fb62c data/minecraft/tags/block/walls.json

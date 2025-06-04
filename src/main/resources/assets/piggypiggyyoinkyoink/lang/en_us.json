@@ -13,6 +13,16 @@
   "block.piggypiggyyoinkyoink.dingus_deepslate_ore" : "Deepslate Dingus Ore",
   "block.piggypiggyyoinkyoink.magic_block" : "Magic Block",
 
+  "block.piggypiggyyoinkyoink.dingus_stairs" : "Dingus Stairs",
+  "block.piggypiggyyoinkyoink.dingus_slab" : "Dingus Slab",
+  "block.piggypiggyyoinkyoink.dingus_fence" : "Dingus Fence",
+  "block.piggypiggyyoinkyoink.dingus_fence_gate" : "Dingus Fence Gate",
+  "block.piggypiggyyoinkyoink.dingus_wall" : "Dingus Wall",
+  "block.piggypiggyyoinkyoink.dingus_button" : "Dingus Button",
+  "block.piggypiggyyoinkyoink.dingus_pressure_plate" : "Dingus Pressure Plate",
+  "block.piggypiggyyoinkyoink.dingus_door" : "Dingus Door",
+  "block.piggypiggyyoinkyoink.dingus_trapdoor" : "Dingus Trapdoor",
+
 
   "creativetab.piggypiggyyoinkyoink.dingus_items": "Dingus Items",
   "creativetab.piggypiggyyoinkyoink.dingus_blocks": "Dingus Blocks",

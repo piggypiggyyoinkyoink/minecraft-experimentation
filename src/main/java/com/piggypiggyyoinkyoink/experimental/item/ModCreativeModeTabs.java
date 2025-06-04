@@ -42,6 +42,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DINGUS_ORE);
                         output.accept(ModBlocks.DINGUS_DEEPSLATE_ORE);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModBlocks.DINGUS_STAIRS);
+                        output.accept(ModBlocks.DINGUS_SLAB);
+                        output.accept(ModBlocks.DINGUS_DOOR);
+                        output.accept(ModBlocks.DINGUS_TRAPDOOR);
+                        output.accept(ModBlocks.DINGUS_BUTTON);
+                        output.accept(ModBlocks.DINGUS_PRESSURE_PLATE);
+                        output.accept(ModBlocks.DINGUS_FENCE);
+                        output.accept(ModBlocks.DINGUS_FENCE_GATE);
+                        output.accept(ModBlocks.DINGUS_WALL);
 
                     })
                     .build());

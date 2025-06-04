@@ -6,10 +6,10 @@ import com.piggypiggyyoinkyoink.experimental.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -34,6 +34,36 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<StairBlock> DINGUS_STAIRS = registerBlock("dingus_stairs",
+            ()-> new StairBlock(ModBlocks.DINGUS_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<SlabBlock> DINGUS_SLAB = registerBlock("dingus_slab",
+            ()-> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<PressurePlateBlock> DINGUS_PRESSURE_PLATE = registerBlock("dingus_pressure_plate",
+            ()-> new PressurePlateBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<ButtonBlock> DINGUS_BUTTON = registerBlock("dingus_button",
+            ()-> new ButtonBlock(BlockSetType.IRON, 20,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission())); //need noCollission for buttons
+
+    public static final DeferredBlock<FenceBlock> DINGUS_FENCE = registerBlock("dingus_fence",
+            ()-> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<FenceGateBlock> DINGUS_FENCE_GATE = registerBlock("dingus_fence_gate",
+            ()-> new FenceGateBlock(WoodType.ACACIA,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+    public static final DeferredBlock<WallBlock> DINGUS_WALL = registerBlock("dingus_wall",
+            ()-> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<DoorBlock> DINGUS_DOOR = registerBlock("dingus_door",
+            ()-> new DoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion())); //need noOcclusion for doors
+    public static final DeferredBlock<TrapDoorBlock> DINGUS_TRAPDOOR = registerBlock("dingus_trapdoor",
+            ()-> new TrapDoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion())); //need noOcclusion for trapdoors
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name,block);
