@@ -1,2 +1,7 @@
-// 1.21.1	2025-03-23T14:14:58.586374	Tags for minecraft:item mod id piggypiggyyoinkyoink
+// 1.21.1	2025-06-04T17:44:47.9905491	Tags for minecraft:item mod id piggypiggyyoinkyoink
 4e4e0189e4be00928ad8752b828f13f9e6c58105 data/c/tags/item/transformable_items.json
+606f3a742449f7df4ff0521785d27643337b29ed data/minecraft/tags/item/axes.json
+d19db5604916cdc85bad7310da68a3da67729445 data/minecraft/tags/item/hoes.json
+3630365afd8354dd5cda14b6a36f08126b5e4e27 data/minecraft/tags/item/pickaxes.json
+f9053e2bf294270fac87aab63fd41880ef30bdff data/minecraft/tags/item/shovels.json
+2be4de0e448a798d11ae6972711189a95b582ae7 data/minecraft/tags/item/swords.json

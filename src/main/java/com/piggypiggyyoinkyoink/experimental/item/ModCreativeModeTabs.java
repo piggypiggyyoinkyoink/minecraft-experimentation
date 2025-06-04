@@ -23,6 +23,13 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.DINGUS);
                         output.accept(ModItems.RAW_DINGUS);
+
+                        output.accept(ModItems.DINGUS_SWORD);
+                        output.accept(ModItems.DINGUS_PICKAXE);
+                        output.accept(ModItems.DINGUS_AXE);
+                        output.accept(ModItems.DINGUS_SHOVEL);
+                        output.accept(ModItems.DINGUS_HOE);
+
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.RADISH);
                         output.accept(ModItems.DIAMOND_APPLE);

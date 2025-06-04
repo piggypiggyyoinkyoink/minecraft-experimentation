@@ -5,9 +5,7 @@ import com.piggypiggyyoinkyoink.experimental.item.custom.ChiselItem;
 import com.piggypiggyyoinkyoink.experimental.item.custom.EnchantedAppleItem;
 import com.piggypiggyyoinkyoink.experimental.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -41,6 +39,15 @@ public class ModItems {
     public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",
             () -> new Item(new Item.Properties())); //uses /data/neoforge/data_maps/itemfurnace_fuels.json
     //^ 2 different ways of adding fuels. To get vanilla burntimes, shift twice and go to AbstractFurnaceBlockEntity class buildFuels method
+
+
+
+    //tools
+    public static final DeferredItem<SwordItem> DINGUS_SWORD = ITEMS.register("dingus_sword", ()-> new SwordItem(ModToolTiers.DINGUS, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.DINGUS, 3, -2.4f))));
+    public static final DeferredItem<PickaxeItem> DINGUS_PICKAXE = ITEMS.register("dingus_pickaxe", ()-> new PickaxeItem(ModToolTiers.DINGUS, new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.DINGUS, 1.4f, -2.8f))));
+    public static final DeferredItem<ShovelItem> DINGUS_SHOVEL = ITEMS.register("dingus_shovel", ()-> new ShovelItem(ModToolTiers.DINGUS, new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.DINGUS, 1.5f, -3.0f))));
+    public static final DeferredItem<AxeItem> DINGUS_AXE = ITEMS.register("dingus_axe", ()-> new AxeItem(ModToolTiers.DINGUS, new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.DINGUS, 6.0f, -3.2f))));
+    public static final DeferredItem<HoeItem> DINGUS_HOE = ITEMS.register("dingus_hoe", ()-> new HoeItem(ModToolTiers.DINGUS, new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.DINGUS, 0f, -3.0f))));
 
 
     public static void register(IEventBus eventBus){

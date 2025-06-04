@@ -10,6 +10,10 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks{
+        public static final TagKey<Block> NEEDS_DINGUS_TOOL = createTag("needs_dingus_tool");
+        public static final TagKey<Block> INCORRECT_FOR_DINGUS_TOOL = createTag("incorrect_for_dingus_tool");
+
+
         private static TagKey<Block> createTag(String name){
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(Experimental.MODID, name));
         }

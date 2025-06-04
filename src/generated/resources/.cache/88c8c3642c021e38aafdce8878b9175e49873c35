@@ -1,10 +1,15 @@
-// 1.21.1	2025-06-04T14:18:53.5060889	Item Models: piggypiggyyoinkyoink
+// 1.21.1	2025-06-04T17:44:47.99155	Item Models: piggypiggyyoinkyoink
 b6f94464a6bfd784d8bb78db0093f72d368edea2 assets/piggypiggyyoinkyoink/models/item/chisel.json
 43e787ca9358c87fce4a927a92065a4a99a9e170 assets/piggypiggyyoinkyoink/models/item/diamond_apple.json
 2ace452c87fab1f25a4d6f6be5e046d61369050e assets/piggypiggyyoinkyoink/models/item/dingus.json
+9a1668c9cc365671295d06d50591c207b655bd3a assets/piggypiggyyoinkyoink/models/item/dingus_axe.json
 fb8588512dda336698e0c00eaaa429c293976b3d assets/piggypiggyyoinkyoink/models/item/dingus_button.json
 636d57ff9d27dac6d90c8ccedbf83efe04a23879 assets/piggypiggyyoinkyoink/models/item/dingus_door.json
 841b29257c5241498dcfbd8b10a9fd7932ebc6cf assets/piggypiggyyoinkyoink/models/item/dingus_fence.json
+9de37b9fe2f7658d9b973c0344585ae3ac0b2e2e assets/piggypiggyyoinkyoink/models/item/dingus_hoe.json
+fb7e8ec42727c86235704f11b22319ce494d43be assets/piggypiggyyoinkyoink/models/item/dingus_pickaxe.json
+7ec2f0156d0d224253796d4cf9c3edc98ce5c275 assets/piggypiggyyoinkyoink/models/item/dingus_shovel.json
+0d1f5959f2611cb15e72c4ca2c253c25588600ba assets/piggypiggyyoinkyoink/models/item/dingus_sword.json
 5902024e10f98780443df7c68fa2e58caba7d8fd assets/piggypiggyyoinkyoink/models/item/dingus_wall.json
 6ad7cbd7741904e6624080ac892475ebce1d4312 assets/piggypiggyyoinkyoink/models/item/enchanted_diamond_apple.json
 baaebda54268f4ddf63cdd45d721574f0cca6456 assets/piggypiggyyoinkyoink/models/item/frostfire_ice.json

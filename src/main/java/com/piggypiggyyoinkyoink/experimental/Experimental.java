@@ -1,6 +1,7 @@
 package com.piggypiggyyoinkyoink.experimental;
 
 import com.piggypiggyyoinkyoink.experimental.block.ModBlocks;
+import com.piggypiggyyoinkyoink.experimental.component.ModDataComponents;
 import com.piggypiggyyoinkyoink.experimental.item.ModCreativeModeTabs;
 import com.piggypiggyyoinkyoink.experimental.item.ModItems;
 import org.slf4j.Logger;
@@ -55,6 +56,8 @@ public class Experimental
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
